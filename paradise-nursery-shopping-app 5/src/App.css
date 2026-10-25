@@ -1,0 +1,27 @@
+.landing {
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, rgba(9, 36, 25, .88) 0%, rgba(9, 36, 25, .56) 52%, rgba(9, 36, 25, .12) 100%),
+    url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=2000&q=85');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.landing-overlay { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 48px clamp(24px, 8vw, 120px); gap: 34px; }
+.landing-content { max-width: 670px; padding: 42px 0; }
+.landing h1 { margin: 10px 0 20px; font-size: clamp(3rem, 7vw, 6.4rem); line-height: .98; letter-spacing: -.055em; }
+.landing-tagline { max-width: 575px; margin-bottom: 30px; font-size: 1.2rem; line-height: 1.75; color: #eef7ef; }
+.eyebrow { color: #357a50; font-size: .78rem; font-weight: 800; letter-spacing: .18em; }
+.eyebrow.light { color: #c2edb8; }
+.button { display: inline-flex; align-items: center; gap: 12px; padding: 14px 22px; border-radius: 999px; font-weight: 800; text-decoration: none; transition: transform .15s ease, background .15s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-light { color: #174b35; background: #f5ffe9; }
+.button-light:hover { background: #dff6d2; }
+.landing-about { max-width: 760px; background: rgba(255,255,255,.94); color: #1f3327; border-radius: 18px; }
+.landing-about .about-panel { padding: 25px 28px; }
+.landing-about .about-panel h2 { margin: 8px 0 10px; }
+.landing-about .about-panel p:not(.eyebrow) { line-height: 1.65; }
+@media (min-width: 1000px) {
+  .landing-overlay { flex-direction: row; align-items: center; justify-content: space-between; }
+  .landing-content { flex: 1; }
+  .landing-about { width: 390px; }
+}
